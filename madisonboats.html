@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Madison Boats</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=David+Libre:wght@400;500&family=Fredoka+One&family=Lato:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Nunito:wght@900&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/v4-shims.css">
+    <style>
+        body {
+            margin: 0;
+
+            background-color: midnightblue;
+
+        }
+
+        header {
+            text-align: center;
+            background-image: url(Images/kayak3.png);
+            background-size: cover;
+            background-origin: padding-box padding-top: 300px;
+            padding-bottom: 250px;
+            color: #3E9297;
+
+        }
+
+        header h1 {
+            font-family: 'Lato', serif;
+            font-weight: 400;
+            font-size: 100px;
+            letter-spacing: 15px;
+            text-transform: uppercase;
+            text-shadow: -4px 3px 8px black;
+            text-align: middle;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            padding-top: 250px;
+        }
+
+        header h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 55px;
+            text-align: middle;
+            margin-bottom: 100px;
+            margin-top: 15px;
+            text-shadow: 1px 3px 4px black;
+
+        }
+
+        a.book {
+            color: #EFE9E9;
+            text-transform: uppercase;
+            background-color: #3E9297;
+            border-radius: 15px;
+            border: solid white 2px;
+            text-decoration: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            font-size: 36px;
+            font-family: 'David Libre', serif;
+            font-weight: 500;
+
+        }
+
+        a.book:hover {
+            background-color: darkcyan
+        }
+
+        nav {
+            background-color: #EFE9E9;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: right;
+            padding: 10px 0px 10px 10px;
+        }
+
+        nav a {
+            color: #3E9297;
+            text-decoration: none;
+            font-family: 'Lato', serif;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-right: 30px;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            font-weight: 700
+        }
+
+        nav img {
+            float: left;
+        }
+
+
+        #features {
+            background-image: url(Images/landscape.png);
+            background-size: cover;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            overflow: hidden;
+        }
+
+        #features article {
+            text-align: center;
+            width: 300px;
+            float: left;
+        }
+
+        #features article h3 {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 900;
+            color: #3E9297;
+            font-size: 35px;
+            margin: 0;
+
+
+        }
+
+        #features article p {
+            font-family: 'Lato', serif;
+            font-weight: 500;
+            color: #EFE9E9;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        #calltoaction {
+            text-align: center;
+            background-image: url(Images/kayak1.png);
+            padding-top: 150px;
+            padding-bottom: 300px;
+            background-size: cover;
+
+        }
+
+        #calltoaction h3 {
+            font-size: 72px;
+            color: white;
+            text-shadow: 0px 3px 3px black;
+            letter-spacing: 4px;
+            font-weight: 200;
+            font-family: 'Dancing Script', cursive;
+            font-weight: 400;
+            margin-bottom: 100px;
+        }
+
+        #calltoaction a {
+            color: white;
+            text-transform: uppercase;
+            background-color: black;
+            border-radius: 15px;
+            border: solid white 2px;
+            text-decoration: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            font-size: 36px;
+            font-family: 'David Libre', serif;
+            font-weight: 500
+        }
+
+        #calltoaction a:hover {
+            color: black;
+            text-transform: uppercase;
+            background-color: white;
+            border-radius: 15px;
+            border: solid black 2px;
+            text-decoration: none;
+        }
+
+        .fab {
+            color: #3E9297;
+            font-size: 48px;
+            letter-spacing: 30px;
+
+        }
+
+        .fab:hover {
+            color: darkcyan;
+            font-weight: 500
+        }
+
+        footer {
+            background-color: #EFE9E9;
+            text-align: center;
+            padding-top: 18px;
+        }
+
+        footer div {
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        footer div a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        #safety {
+            background-image: url(Images/wood.png);
+            font-family: 'Lato', serif;
+            font-weight: 500;
+            color: #3E9297;
+            text-shadow: 0px 2px 2px black;
+            font-size: 26px;
+            overflow: hidden;
+            padding-top: 90px;
+            padding-bottom: 90px;
+
+
+        }
+
+        #safety h3 {
+            font-family: 'Lato', serif;
+            font-weight: 700;
+            font-size: 36px;
+            color: black;
+            text-shadow: 0px 0px 0px
+        }
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+
+        }
+
+        li {
+
+            margin-top: 15px;
+        }
+
+        .container {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .safetyimg {
+            float: left;
+            width: 450px;
+            height: auto;
+
+        }
+
+        .safetytext {
+            margin-left: 50px;
+            float: left;
+            width: 500px;
+        }
+
+    </style>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+<body>
+    <header>
+        <nav>
+            <a href="#"><img src="Images/Logo.png" alt="madison boats logo"></a>
+            <div class="links">
+                <a href="#safety">COVID-19 Safety</a> <a href="#calltoaction">Book Online</a> <a href="#features">Our Boats</a>
+            </div>
+        </nav>
+        <h1>Madison Boats</h1>
+        <h2>Safe on the water<br>
+            Easy, Fun, Boating for Everyone</h2>
+        <a href="#" class="book">Book Online</a>
+    </header>
+    <section id="features">
+        <div class="container">
+            <article>
+                <img src="images/3.png" alt="row of kayaks">
+                <h3>Easy Rental</h3>
+                <p>Choose your location, date, time, duration, number of boats. On the day of your rental,<br>
+                    find a space in the park away from others and wait for a text or call letting you know <br>
+                    your boat is ready. Follow the directional signs to get your paddle & PFD.</p>
+            </article>
+            <article>
+                <img src="Images/1.png" alt="dock">
+                <h3>Three Locations</h3>
+                <p>Three great locations to serve you. Wingra Boats on Knickerbocker street, <br>
+                    Brittingham
+                    Boats at Brittingham Place, and Marshall Boats on Allen Boulevard in Madison.</p>
+            </article>
+            <article>
+                <img src="Images/2.png" alt="docked kayak">
+                <h3>Boats and More</h3>
+                <p>Join us on the lake! We have something for all boat lovers from canoes, to single and <br>
+                    tandem kayaks. Stand up paddle boards, paddle boats, duck paddle boats, as well as <br>
+                    pontoon boat rentals!</p>
+            </article>
+        </div>
+    </section>
+    <section id="safety">
+        <div class="container">
+            <img src="Images/kayak2.png" alt="woman on kayak" class="safetyimg">
+            <div class="safetytext">
+                <h3>COVID-19 Safety</h3>
+                To keep you safe we are:
+                <ul>
+
+                    <li> Sanitizing all boats & paddles after every use. </li>
+                    <li> PFD's are used only 1 time every 72 hours. </li>
+                    <li> All staff will wear face masks or face shields. </li>
+                    <li> All bookings are done online to reduce interactions. </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="calltoaction">
+        <h3>Get Back To What You Love</h3>
+        <a href="#">Book Online</a>
+    </section>
+    <br>
+    <footer>
+        <p><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a> <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a> <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> </p>
+        <div>&copy;2020 Madison Boats | <a href="mailto:info@madisonboats.com">info@madisonboats.com</a></div>
+    </footer>
+</body>
+
+</html>
